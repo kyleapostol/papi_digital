@@ -22,22 +22,22 @@ section{
     height: 100vh;
 }
 
-section:nth-child(2) {
-    background: black;
-}
-section:nth-child(3) {
-    // background: white;
-    background:black
-}
+// section:nth-child(2) {
+//     background: black;
+// }
+// section:nth-child(3) {
+//     // background: white;
+//     background:black
+// }
 section:nth-child(4) {
     background: white;
 }
-section:nth-child(5) {
-    background: red;
-}
-section:nth-child(6) {
-    background: rgb(51, 255, 0);
-}
+// section:nth-child(5) {
+//     background: red;
+// }
+// section:nth-child(6) {
+//     background: rgb(51, 255, 0);
+// }
 
 li > a {
     color: white !important;
@@ -64,6 +64,11 @@ li > button {
         width: 80%;
         margin-left: 20%;
         justify-content: space-around;
+    }
+
+    .img_title{
+        width: 60%;
+        margin-left: 5%;
     }
 
     .img_grass{
@@ -214,9 +219,11 @@ li > button {
             font-family: $base_font_family;
             font-size: $base_font_size;
             font-weight: $base_font_weight;
+            line-height: 2;
 
             span{
                 color: #FFCD55;
+                line-height: unset;
             }
         }
 
@@ -231,6 +238,10 @@ li > button {
 .section_4{
     position: relative;
 
+    .section_4_container{
+        z-index: 4;
+        position: relative;
+
     .img_black{
         position: absolute;
         top: -25%;
@@ -238,19 +249,19 @@ li > button {
     }
 
     .img_method{
-       position: absolute;
+        position: absolute;
         z-index: 3;
-        width: 50%;
+        width: 45%;
         left: 25%;
-        top: 25%;
+        margin-top: 25%;
     }
 
     .img_water{
         position: absolute;
         width: 35%;
         z-index: 3;
-        right: -10%;
-        bottom: 30%;
+        right: -12%;
+        bottom: -1000px;
     }
 
     .img_lightning{
@@ -259,11 +270,14 @@ li > button {
         width: 20%;
         top: -35%;
     }
+    }
+
+
 }
 
 .section_5{
     position: relative;
-    z-index: 1;
+    z-index: 3;
 
     .img_paint_pink{    
         position: absolute;
@@ -274,6 +288,7 @@ li > button {
         position: relative;
         color: white;
         margin-left: 5%;
+        margin-top: 10%;
 
         .section_5_title{
             font-size: $base_font_size;
@@ -297,13 +312,14 @@ li > button {
 
 .section_6{
     position: relative;
+    z-index: 2;
 
     .section_6_container{
         margin-top: 25%;
 
          .img_paint_yellow{    
             position: absolute;
-            top: -50%;
+            top: -65%;
         }
 
         .section_6_textArea{
@@ -334,4 +350,139 @@ li > button {
         }
     }
    
+}
+
+.section_7{
+    position: relative;
+    z-index: 1;
+
+    .img_paint_blue{    
+        position: absolute;
+        top: -50%;
+    }
+
+    .section_7_textArea{
+        position: relative;
+        color: white;
+        margin-left: 5%;
+        margin-top: 30%;
+        height: 100vh;
+
+        .section_7_title{
+            font-size: $base_font_size;
+            font-weight: $base_font_weight;
+            padding-top: 10%;
+        }
+
+        .section_7_text{
+            width: 35%;
+            font-size: $secondary_font_size + 1;
+            font-weight: $secondary_font_weight + 100;
+            color: black;;
+        }
+    }
+
+    .img_brain{
+        position: absolute;
+        top: 0;
+        width: 60%;
+        right: 0;
+    }
+}
+
+.section_8{
+    position: relative;
+
+    .img_paint_black{    
+        position: absolute;
+        top: -50%;
+    }
+
+    .section_8_textArea{
+        position: relative;
+        color: white;
+        margin-top: 30%;
+
+        .section_8_title{
+            font-size: $base_font_size;
+            font-weight: $base_font_weight;
+            padding-top: 10%;
+            text-align: center;
+        }
+
+        .section_8_text{
+            font-size: $secondary_font_size + 1;
+            font-weight: $secondary_font_weight + 100;
+            text-align: center;
+            padding: 0 11% 0 11%;
+        }
+    }
+
+    .img_squiggle_3{
+        width: 15%;
+        position: absolute;
+        top: -55%;
+        z-index: 3;
+        right: 0;
+    }
+
+    .img_stars_3{
+        position: absolute;
+        width: 40%;
+        top: -15%;
+        z-index: 2;
+    }
+}
+
+.section_9{
+    position: relative;
+
+    .img_wave_half_container{
+        width: 100%;
+        height: 25%;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+
+        .img_wave{
+            position: absolute;
+            bottom: 2px;
+            z-index: -1;
+        }
+    }
+
+    .img_gradient_bg{    
+        position: absolute;
+        top: 0px;
+        z-index: -1;
+    } 
+
+    .img_stars_section_9{
+        position: absolute;
+        width: 25%;
+        right: 20%;
+        top: 0;
+    }
+
+    .contact{
+        color: white;
+        width: 50%;
+        margin-top: 25%;
+        margin-left: 5%;
+
+        .section_9_title{
+            font-size: $base_font_size - 1;
+            font-family: $base_font_family;
+            font-weight: $base_font_weight;
+        }
+
+        .section_9_subHeader{
+            font-size: $secondary_font_size;
+            font-weight: $secondary_font_weight;
+        }
+
+        #emailHelp{
+            color: white;
+        }
+    }
 }
